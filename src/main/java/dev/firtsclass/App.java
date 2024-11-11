@@ -1,6 +1,7 @@
 package dev.firtsclass;
 
 import controller.ProgramController;
+import models.Person;
 
 /**
  * Hello world!
@@ -15,8 +16,18 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        ProgramController controller = new ProgramController();
-        controller.startProgram();
+       ProgramController controller = new ProgramController();
+       
+        Person person1 = new Person("Luisa", "Alcalá", "z12345v", 1990, "España", 'H' );
+
+        String personAttributes = controller.getPersonAttributes(person1);
+        
+        //llamar a la view para que me imprima        
+        //printAtributesPerson(personAttributes);
+      
+         System.out.println(personAttributes);
         
     }
+
+   
 }
