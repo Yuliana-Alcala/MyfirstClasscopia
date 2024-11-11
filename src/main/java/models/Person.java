@@ -1,12 +1,12 @@
 package models;
 
 public class Person {
-    public String name;
-    public String lastName;
-    public String dni;
-    public int yearOfBirth;
-    public String countryOfBirth;
-    public char gender;
+    private String name;
+    private String lastName;
+    private String dni;
+    private int yearOfBirth;
+    private String countryOfBirth;
+    private char gender;
     
     public Person(String name, String lastName, String dni, int yearOfBirth, String countryOfBirth, char gender) {
         this.name = name;
